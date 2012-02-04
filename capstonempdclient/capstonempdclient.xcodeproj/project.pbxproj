@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		495E127014DCB2D100F74EED /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 495E126F14DCB2D100F74EED /* Cocoa.framework */; };
+		495E127A14DCB2D100F74EED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 495E127814DCB2D100F74EED /* InfoPlist.strings */; };
+		495E127C14DCB2D100F74EED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 495E127B14DCB2D100F74EED /* main.m */; };
+		495E128014DCB2D100F74EED /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 495E127E14DCB2D100F74EED /* Credits.rtf */; };
+		495E128314DCB2D100F74EED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 495E128214DCB2D100F74EED /* AppDelegate.m */; };
+		495E128614DCB2D100F74EED /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 495E128414DCB2D100F74EED /* MainMenu.xib */; };
+		495E128E14DCB2D100F74EED /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 495E128D14DCB2D100F74EED /* SenTestingKit.framework */; };
+		495E128F14DCB2D100F74EED /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 495E126F14DCB2D100F74EED /* Cocoa.framework */; };
+		495E129714DCB2D100F74EED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 495E129514DCB2D100F74EED /* InfoPlist.strings */; };
+		495E129A14DCB2D100F74EED /* capstonempdclientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 495E129914DCB2D100F74EED /* capstonempdclientTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		495E129014DCB2D100F74EED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 495E126214DCB2D000F74EED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 495E126A14DCB2D100F74EED;
+			remoteInfo = capstonempdclient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		495E126B14DCB2D100F74EED /* capstonempdclient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = capstonempdclient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		495E126F14DCB2D100F74EED /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		495E127214DCB2D100F74EED /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		495E127314DCB2D100F74EED /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		495E127414DCB2D100F74EED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		495E127714DCB2D100F74EED /* capstonempdclient-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "capstonempdclient-Info.plist"; sourceTree = "<group>"; };
+		495E127914DCB2D100F74EED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		495E127B14DCB2D100F74EED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		495E127D14DCB2D100F74EED /* capstonempdclient-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "capstonempdclient-Prefix.pch"; sourceTree = "<group>"; };
+		495E127F14DCB2D100F74EED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		495E128114DCB2D100F74EED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		495E128214DCB2D100F74EED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		495E128514DCB2D100F74EED /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		495E128C14DCB2D100F74EED /* capstonempdclientTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = capstonempdclientTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		495E128D14DCB2D100F74EED /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		495E129414DCB2D100F74EED /* capstonempdclientTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "capstonempdclientTests-Info.plist"; sourceTree = "<group>"; };
+		495E129614DCB2D100F74EED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		495E129814DCB2D100F74EED /* capstonempdclientTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = capstonempdclientTests.h; sourceTree = "<group>"; };
+		495E129914DCB2D100F74EED /* capstonempdclientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = capstonempdclientTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		495E126814DCB2D100F74EED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495E127014DCB2D100F74EED /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		495E128814DCB2D100F74EED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495E128E14DCB2D100F74EED /* SenTestingKit.framework in Frameworks */,
+				495E128F14DCB2D100F74EED /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		495E126014DCB2D000F74EED = {
+			isa = PBXGroup;
+			children = (
+				495E127514DCB2D100F74EED /* capstonempdclient */,
+				495E129214DCB2D100F74EED /* capstonempdclientTests */,
+				495E126E14DCB2D100F74EED /* Frameworks */,
+				495E126C14DCB2D100F74EED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		495E126C14DCB2D100F74EED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				495E126B14DCB2D100F74EED /* capstonempdclient.app */,
+				495E128C14DCB2D100F74EED /* capstonempdclientTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		495E126E14DCB2D100F74EED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				495E126F14DCB2D100F74EED /* Cocoa.framework */,
+				495E128D14DCB2D100F74EED /* SenTestingKit.framework */,
+				495E127114DCB2D100F74EED /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		495E127114DCB2D100F74EED /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				495E127214DCB2D100F74EED /* AppKit.framework */,
+				495E127314DCB2D100F74EED /* CoreData.framework */,
+				495E127414DCB2D100F74EED /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		495E127514DCB2D100F74EED /* capstonempdclient */ = {
+			isa = PBXGroup;
+			children = (
+				495E128114DCB2D100F74EED /* AppDelegate.h */,
+				495E128214DCB2D100F74EED /* AppDelegate.m */,
+				495E128414DCB2D100F74EED /* MainMenu.xib */,
+				495E127614DCB2D100F74EED /* Supporting Files */,
+			);
+			path = capstonempdclient;
+			sourceTree = "<group>";
+		};
+		495E127614DCB2D100F74EED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				495E127714DCB2D100F74EED /* capstonempdclient-Info.plist */,
+				495E127814DCB2D100F74EED /* InfoPlist.strings */,
+				495E127B14DCB2D100F74EED /* main.m */,
+				495E127D14DCB2D100F74EED /* capstonempdclient-Prefix.pch */,
+				495E127E14DCB2D100F74EED /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		495E129214DCB2D100F74EED /* capstonempdclientTests */ = {
+			isa = PBXGroup;
+			children = (
+				495E129814DCB2D100F74EED /* capstonempdclientTests.h */,
+				495E129914DCB2D100F74EED /* capstonempdclientTests.m */,
+				495E129314DCB2D100F74EED /* Supporting Files */,
+			);
+			path = capstonempdclientTests;
+			sourceTree = "<group>";
+		};
+		495E129314DCB2D100F74EED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				495E129414DCB2D100F74EED /* capstonempdclientTests-Info.plist */,
+				495E129514DCB2D100F74EED /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		495E126A14DCB2D100F74EED /* capstonempdclient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 495E129D14DCB2D100F74EED /* Build configuration list for PBXNativeTarget "capstonempdclient" */;
+			buildPhases = (
+				495E126714DCB2D100F74EED /* Sources */,
+				495E126814DCB2D100F74EED /* Frameworks */,
+				495E126914DCB2D100F74EED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = capstonempdclient;
+			productName = capstonempdclient;
+			productReference = 495E126B14DCB2D100F74EED /* capstonempdclient.app */;
+			productType = "com.apple.product-type.application";
+		};
+		495E128B14DCB2D100F74EED /* capstonempdclientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 495E12A014DCB2D100F74EED /* Build configuration list for PBXNativeTarget "capstonempdclientTests" */;
+			buildPhases = (
+				495E128714DCB2D100F74EED /* Sources */,
+				495E128814DCB2D100F74EED /* Frameworks */,
+				495E128914DCB2D100F74EED /* Resources */,
+				495E128A14DCB2D100F74EED /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				495E129114DCB2D100F74EED /* PBXTargetDependency */,
+			);
+			name = capstonempdclientTests;
+			productName = capstonempdclientTests;
+			productReference = 495E128C14DCB2D100F74EED /* capstonempdclientTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		495E126214DCB2D000F74EED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 495E126514DCB2D000F74EED /* Build configuration list for PBXProject "capstonempdclient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 495E126014DCB2D000F74EED;
+			productRefGroup = 495E126C14DCB2D100F74EED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				495E126A14DCB2D100F74EED /* capstonempdclient */,
+				495E128B14DCB2D100F74EED /* capstonempdclientTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		495E126914DCB2D100F74EED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495E127A14DCB2D100F74EED /* InfoPlist.strings in Resources */,
+				495E128014DCB2D100F74EED /* Credits.rtf in Resources */,
+				495E128614DCB2D100F74EED /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		495E128914DCB2D100F74EED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495E129714DCB2D100F74EED /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		495E128A14DCB2D100F74EED /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		495E126714DCB2D100F74EED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495E127C14DCB2D100F74EED /* main.m in Sources */,
+				495E128314DCB2D100F74EED /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		495E128714DCB2D100F74EED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495E129A14DCB2D100F74EED /* capstonempdclientTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		495E129114DCB2D100F74EED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 495E126A14DCB2D100F74EED /* capstonempdclient */;
+			targetProxy = 495E129014DCB2D100F74EED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		495E127814DCB2D100F74EED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				495E127914DCB2D100F74EED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		495E127E14DCB2D100F74EED /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				495E127F14DCB2D100F74EED /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		495E128414DCB2D100F74EED /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				495E128514DCB2D100F74EED /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		495E129514DCB2D100F74EED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				495E129614DCB2D100F74EED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		495E129B14DCB2D100F74EED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		495E129C14DCB2D100F74EED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		495E129E14DCB2D100F74EED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "capstonempdclient/capstonempdclient-Prefix.pch";
+				INFOPLIST_FILE = "capstonempdclient/capstonempdclient-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		495E129F14DCB2D100F74EED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "capstonempdclient/capstonempdclient-Prefix.pch";
+				INFOPLIST_FILE = "capstonempdclient/capstonempdclient-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		495E12A114DCB2D100F74EED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/capstonempdclient.app/Contents/MacOS/capstonempdclient";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "capstonempdclient/capstonempdclient-Prefix.pch";
+				INFOPLIST_FILE = "capstonempdclientTests/capstonempdclientTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		495E12A214DCB2D100F74EED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/capstonempdclient.app/Contents/MacOS/capstonempdclient";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "capstonempdclient/capstonempdclient-Prefix.pch";
+				INFOPLIST_FILE = "capstonempdclientTests/capstonempdclientTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		495E126514DCB2D000F74EED /* Build configuration list for PBXProject "capstonempdclient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				495E129B14DCB2D100F74EED /* Debug */,
+				495E129C14DCB2D100F74EED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		495E129D14DCB2D100F74EED /* Build configuration list for PBXNativeTarget "capstonempdclient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				495E129E14DCB2D100F74EED /* Debug */,
+				495E129F14DCB2D100F74EED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		495E12A014DCB2D100F74EED /* Build configuration list for PBXNativeTarget "capstonempdclientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				495E12A114DCB2D100F74EED /* Debug */,
+				495E12A214DCB2D100F74EED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 495E126214DCB2D000F74EED /* Project object */;
+}
