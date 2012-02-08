@@ -17,6 +17,7 @@
 		495E128F14DCB2D100F74EED /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 495E126F14DCB2D100F74EED /* Cocoa.framework */; };
 		495E129714DCB2D100F74EED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 495E129514DCB2D100F74EED /* InfoPlist.strings */; };
 		495E129A14DCB2D100F74EED /* capstonempdclientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 495E129914DCB2D100F74EED /* capstonempdclientTests.m */; };
+		49D770A514E1F8B100834F00 /* MPDConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D770A414E1F8B100834F00 /* MPDConnectionManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		495E129614DCB2D100F74EED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		495E129814DCB2D100F74EED /* capstonempdclientTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = capstonempdclientTests.h; sourceTree = "<group>"; };
 		495E129914DCB2D100F74EED /* capstonempdclientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = capstonempdclientTests.m; sourceTree = "<group>"; };
+		49D770A314E1F8B100834F00 /* MPDConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDConnectionManager.h; sourceTree = "<group>"; };
+		49D770A414E1F8B100834F00 /* MPDConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDConnectionManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,8 @@
 				495E128214DCB2D100F74EED /* AppDelegate.m */,
 				495E128414DCB2D100F74EED /* MainMenu.xib */,
 				495E127614DCB2D100F74EED /* Supporting Files */,
+				49D770A314E1F8B100834F00 /* MPDConnectionManager.h */,
+				49D770A414E1F8B100834F00 /* MPDConnectionManager.m */,
 			);
 			path = capstonempdclient;
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 			files = (
 				495E127C14DCB2D100F74EED /* main.m in Sources */,
 				495E128314DCB2D100F74EED /* AppDelegate.m in Sources */,
+				49D770A514E1F8B100834F00 /* MPDConnectionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +441,7 @@
 				495E129F14DCB2D100F74EED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		495E12A014DCB2D100F74EED /* Build configuration list for PBXNativeTarget "capstonempdclientTests" */ = {
 			isa = XCConfigurationList;
@@ -443,6 +450,7 @@
 				495E12A214DCB2D100F74EED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
