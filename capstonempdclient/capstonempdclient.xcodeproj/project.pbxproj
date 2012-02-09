@@ -17,6 +17,7 @@
 		495E128F14DCB2D100F74EED /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 495E126F14DCB2D100F74EED /* Cocoa.framework */; };
 		495E129714DCB2D100F74EED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 495E129514DCB2D100F74EED /* InfoPlist.strings */; };
 		495E129A14DCB2D100F74EED /* capstonempdclientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 495E129914DCB2D100F74EED /* capstonempdclientTests.m */; };
+		49D1D59914E3213B0079C014 /* mpd in Resources */ = {isa = PBXBuildFile; fileRef = 49D1D59814E3213B0079C014 /* mpd */; };
 		49D770A514E1F8B100834F00 /* MPDConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D770A414E1F8B100834F00 /* MPDConnectionManager.m */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		495E129614DCB2D100F74EED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		495E129814DCB2D100F74EED /* capstonempdclientTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = capstonempdclientTests.h; sourceTree = "<group>"; };
 		495E129914DCB2D100F74EED /* capstonempdclientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = capstonempdclientTests.m; sourceTree = "<group>"; };
+		49D1D59814E3213B0079C014 /* mpd */ = {isa = PBXFileReference; lastKnownFileType = folder; path = mpd; sourceTree = "<group>"; };
 		49D770A314E1F8B100834F00 /* MPDConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDConnectionManager.h; sourceTree = "<group>"; };
 		49D770A414E1F8B100834F00 /* MPDConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDConnectionManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +80,7 @@
 		495E126014DCB2D000F74EED = {
 			isa = PBXGroup;
 			children = (
+				49D1D59414E320CF0079C014 /* libmpdclient */,
 				495E127514DCB2D100F74EED /* capstonempdclient */,
 				495E129214DCB2D100F74EED /* capstonempdclientTests */,
 				495E126E14DCB2D100F74EED /* Frameworks */,
@@ -158,6 +161,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		49D1D59414E320CF0079C014 /* libmpdclient */ = {
+			isa = PBXGroup;
+			children = (
+				49D1D59814E3213B0079C014 /* mpd */,
+			);
+			name = libmpdclient;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -231,6 +242,7 @@
 				495E127A14DCB2D100F74EED /* InfoPlist.strings in Resources */,
 				495E128014DCB2D100F74EED /* Credits.rtf in Resources */,
 				495E128614DCB2D100F74EED /* MainMenu.xib in Resources */,
+				49D1D59914E3213B0079C014 /* mpd in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +389,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "capstonempdclient/capstonempdclient-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$[SOURCE_ROOT]/mpd/**";
 				INFOPLIST_FILE = "capstonempdclient/capstonempdclient-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -388,6 +401,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "capstonempdclient/capstonempdclient-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$[SOURCE_ROOT]/mpd/**";
 				INFOPLIST_FILE = "capstonempdclient/capstonempdclient-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
