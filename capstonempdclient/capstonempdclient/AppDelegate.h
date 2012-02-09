@@ -7,9 +7,21 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#include <mpd/client.h>
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
+{
+    NSTextField *_serverName;
+    NSTextField *_password;
+    NSTextField *_portNumber;
+    
+}
+- (IBAction)quitProgram:(id)sender;
+- (IBAction)connectToServer:(id)sender;
 
+@property (assign) IBOutlet NSWindow *window;
+@property (strong) IBOutlet NSTextField *serverName;
+@property (strong) IBOutlet NSTextField *password;
+@property (strong) IBOutlet NSTextField *portNumber;
 @end
