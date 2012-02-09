@@ -29,8 +29,6 @@
 
 - (IBAction)connectToServer:(id)sender {
     if (_password.stringValue.length == 0 || _portNumber.stringValue.length == 0 || _serverName.stringValue.length == 0) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Info" ;
-        
         NSLog(@"Enter port, server name, and password.");
     }
 }
