@@ -7,12 +7,12 @@
 //
 
 #import "AppDelegate.h"
-#import <mpd/client.h>
+#import "mpd/client.h"
 
 
 @implementation AppDelegate
-@synthesize portNumber = _portNumber;
 @synthesize password = _password;
+@synthesize portNumber = _portNumber;
 @synthesize serverName = _serverName;
 
 @synthesize window = _window;
@@ -28,8 +28,13 @@
 }
 
 - (IBAction)connectToServer:(id)sender {
-    if (_password.stringValue.length == 0 || _portNumber.stringValue.length == 0 || _serverName.stringValue.length == 0) {
-        NSLog(@"Enter port, server name, and password.");
+    if ( _portNumber.stringValue.length == 0 || _serverName.stringValue.length == 0) {
+        NSLog(@"Enter port, server name.");
+    }else
+    {
+        struct mpd_connection * mpdconnection;
+        NSString * hostname = _password.stringValue;
+        mpdconnection = mpd_connection_new((char *)[hostname cStringUsingEncoding:[NSString defaultCStringEncoding]], 6600, 10000);
     }
 }
 @end

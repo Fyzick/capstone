@@ -13,7 +13,7 @@
 
 {
     NSTextField *_serverName;
-    NSTextField *_password;
+    NSSecureTextField *_password;
     NSTextField *_portNumber;
     
 }
@@ -22,6 +22,6 @@
 
 @property (assign) IBOutlet NSWindow *window;
 @property (strong) IBOutlet NSTextField *serverName;
-@property (strong) IBOutlet NSTextField *password;
 @property (strong) IBOutlet NSTextField *portNumber;
+@property (strong) IBOutlet NSSecureTextField *password;
 @end
