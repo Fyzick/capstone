@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "mpd/client.h"
 
 
 @implementation AppDelegate
@@ -32,9 +31,9 @@
         NSLog(@"Enter port, server name.");
     }else
     {
-        struct mpd_connection * mpdconnection;
-        NSString * hostname = _password.stringValue;
-        mpdconnection = mpd_connection_new((char *)[hostname cStringUsingEncoding:[NSString defaultCStringEncoding]], 6600, 10000);
+       // struct mpd_connection * mpdconnection;
+       // NSString * hostname = _password.stringValue;
+        //mpdconnection = mpd_connection_new((char *)[hostname cStringUsingEncoding:[NSString defaultCStringEncoding]], 6600, 10000);
     }
 }
 @end
