@@ -49,6 +49,7 @@
 		4900186514E364080052DE58 /* sticker.c in Sources */ = {isa = PBXBuildFile; fileRef = 4900183814E364080052DE58 /* sticker.c */; };
 		4900186614E364080052DE58 /* sync.c in Sources */ = {isa = PBXBuildFile; fileRef = 4900183914E364080052DE58 /* sync.c */; };
 		4900186714E364080052DE58 /* tag.c in Sources */ = {isa = PBXBuildFile; fileRef = 4900183B14E364080052DE58 /* tag.c */; };
+		4908999914E9FCA2007A4689 /* MPDWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4908999814E9FCA2007A4689 /* MPDWrapper.m */; };
 		495E127014DCB2D100F74EED /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 495E126F14DCB2D100F74EED /* Cocoa.framework */; };
 		495E127A14DCB2D100F74EED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 495E127814DCB2D100F74EED /* InfoPlist.strings */; };
 		495E127C14DCB2D100F74EED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 495E127B14DCB2D100F74EED /* main.m */; };
@@ -129,6 +130,8 @@
 		4900183B14E364080052DE58 /* tag.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tag.c; sourceTree = "<group>"; };
 		4900183C14E364080052DE58 /* uri.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uri.h; sourceTree = "<group>"; };
 		4900186A14E365AA0052DE58 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = "../../../WOWDOWNLOADS/libmpdclient-2.7/config.h"; sourceTree = "<group>"; };
+		4908999714E9FCA2007A4689 /* MPDWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDWrapper.h; sourceTree = "<group>"; };
+		4908999814E9FCA2007A4689 /* MPDWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDWrapper.m; sourceTree = "<group>"; };
 		495E126B14DCB2D100F74EED /* capstonempdclient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = capstonempdclient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		495E126F14DCB2D100F74EED /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		495E127214DCB2D100F74EED /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -300,6 +303,8 @@
 		495E127614DCB2D100F74EED /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4908999714E9FCA2007A4689 /* MPDWrapper.h */,
+				4908999814E9FCA2007A4689 /* MPDWrapper.m */,
 				495E127714DCB2D100F74EED /* capstonempdclient-Info.plist */,
 				495E127814DCB2D100F74EED /* InfoPlist.strings */,
 				495E127B14DCB2D100F74EED /* main.m */,
@@ -488,6 +493,7 @@
 				4900186514E364080052DE58 /* sticker.c in Sources */,
 				4900186614E364080052DE58 /* sync.c in Sources */,
 				4900186714E364080052DE58 /* tag.c in Sources */,
+				4908999914E9FCA2007A4689 /* MPDWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,7 +572,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACH_O_TYPE = mh_dylib;
+				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -588,7 +594,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACH_O_TYPE = mh_dylib;
+				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
 			};
@@ -601,6 +607,8 @@
 				GCC_PREFIX_HEADER = "capstonempdclient/capstonempdclient-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$[SOURCE_ROOT]/mpd/**";
 				INFOPLIST_FILE = "capstonempdclient/capstonempdclient-Info.plist";
+				LIBRARY_SEARCH_PATHS = "${SOURCE_ROOT}/mpd/**";
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
