@@ -8,6 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #include <mpd/client.h>
+#include "MPDWrapper.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
