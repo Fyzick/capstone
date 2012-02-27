@@ -60,7 +60,12 @@
 		495E128F14DCB2D100F74EED /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 495E126F14DCB2D100F74EED /* Cocoa.framework */; };
 		495E129714DCB2D100F74EED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 495E129514DCB2D100F74EED /* InfoPlist.strings */; };
 		495E129A14DCB2D100F74EED /* capstonempdclientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 495E129914DCB2D100F74EED /* capstonempdclientTests.m */; };
-		49D770A514E1F8B100834F00 /* MPDConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D770A414E1F8B100834F00 /* MPDConnectionManager.m */; };
+		49F0608F14FAD489007C8A51 /* M3Extensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F0608E14FAD489007C8A51 /* M3Extensions.framework */; };
+		49F0609914FAD524007C8A51 /* M3NavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F0609714FAD524007C8A51 /* M3NavigationView.m */; };
+		49F060AF14FB0BFE007C8A51 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F060AE14FB0BFE007C8A51 /* QuartzCore.framework */; };
+		49F060B114FB0C07007C8A51 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F060B014FB0C07007C8A51 /* Quartz.framework */; };
+		49F060B714FB0EF8007C8A51 /* connectedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49F060B614FB0EF8007C8A51 /* connectedView.xib */; };
+		49F060BA14FB1689007C8A51 /* connectedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F060B914FB1689007C8A51 /* connectedController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,8 +156,15 @@
 		495E129614DCB2D100F74EED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		495E129814DCB2D100F74EED /* capstonempdclientTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = capstonempdclientTests.h; sourceTree = "<group>"; };
 		495E129914DCB2D100F74EED /* capstonempdclientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = capstonempdclientTests.m; sourceTree = "<group>"; };
-		49D770A314E1F8B100834F00 /* MPDConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDConnectionManager.h; sourceTree = "<group>"; };
-		49D770A414E1F8B100834F00 /* MPDConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDConnectionManager.m; sourceTree = "<group>"; };
+		49F0608E14FAD489007C8A51 /* M3Extensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = M3Extensions.framework; path = ../../../Downloads/M3Extensions.framework; sourceTree = "<group>"; };
+		49F0609614FAD524007C8A51 /* M3NavigationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = M3NavigationView.h; path = ../../../../Downloads/M3NavigationView/Classes/M3NavigationView.h; sourceTree = "<group>"; };
+		49F0609714FAD524007C8A51 /* M3NavigationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = M3NavigationView.m; path = ../../../../Downloads/M3NavigationView/Classes/M3NavigationView.m; sourceTree = "<group>"; };
+		49F0609814FAD524007C8A51 /* M3NavigationViewControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = M3NavigationViewControllerProtocol.h; path = ../../../../Downloads/M3NavigationView/Classes/M3NavigationViewControllerProtocol.h; sourceTree = "<group>"; };
+		49F060AE14FB0BFE007C8A51 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		49F060B014FB0C07007C8A51 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		49F060B614FB0EF8007C8A51 /* connectedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = connectedView.xib; sourceTree = "<group>"; };
+		49F060B814FB1689007C8A51 /* connectedController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = connectedController.h; sourceTree = "<group>"; };
+		49F060B914FB1689007C8A51 /* connectedController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = connectedController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,7 +172,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49F060B114FB0C07007C8A51 /* Quartz.framework in Frameworks */,
+				49F060AF14FB0BFE007C8A51 /* QuartzCore.framework in Frameworks */,
 				495E127014DCB2D100F74EED /* Cocoa.framework in Frameworks */,
+				49F0608F14FAD489007C8A51 /* M3Extensions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +285,9 @@
 		495E126E14DCB2D100F74EED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				49F060B014FB0C07007C8A51 /* Quartz.framework */,
+				49F060AE14FB0BFE007C8A51 /* QuartzCore.framework */,
+				49F0608E14FAD489007C8A51 /* M3Extensions.framework */,
 				495E126F14DCB2D100F74EED /* Cocoa.framework */,
 				495E128D14DCB2D100F74EED /* SenTestingKit.framework */,
 				495E127114DCB2D100F74EED /* Other Frameworks */,
@@ -290,12 +308,16 @@
 		495E127514DCB2D100F74EED /* capstonempdclient */ = {
 			isa = PBXGroup;
 			children = (
+				49F0609614FAD524007C8A51 /* M3NavigationView.h */,
+				49F0609714FAD524007C8A51 /* M3NavigationView.m */,
+				49F0609814FAD524007C8A51 /* M3NavigationViewControllerProtocol.h */,
 				495E128114DCB2D100F74EED /* AppDelegate.h */,
 				495E128214DCB2D100F74EED /* AppDelegate.m */,
 				495E128414DCB2D100F74EED /* MainMenu.xib */,
 				495E127614DCB2D100F74EED /* Supporting Files */,
-				49D770A314E1F8B100834F00 /* MPDConnectionManager.h */,
-				49D770A414E1F8B100834F00 /* MPDConnectionManager.m */,
+				49F060B614FB0EF8007C8A51 /* connectedView.xib */,
+				49F060B814FB1689007C8A51 /* connectedController.h */,
+				49F060B914FB1689007C8A51 /* connectedController.m */,
 			);
 			path = capstonempdclient;
 			sourceTree = "<group>";
@@ -414,6 +436,7 @@
 				495E127A14DCB2D100F74EED /* InfoPlist.strings in Resources */,
 				495E128014DCB2D100F74EED /* Credits.rtf in Resources */,
 				495E128614DCB2D100F74EED /* MainMenu.xib in Resources */,
+				49F060B714FB0EF8007C8A51 /* connectedView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,7 +473,6 @@
 			files = (
 				495E127C14DCB2D100F74EED /* main.m in Sources */,
 				495E128314DCB2D100F74EED /* AppDelegate.m in Sources */,
-				49D770A514E1F8B100834F00 /* MPDConnectionManager.m in Sources */,
 				4900183D14E364080052DE58 /* async.c in Sources */,
 				4900183E14E364080052DE58 /* capabilities.c in Sources */,
 				4900183F14E364080052DE58 /* cmessage.c in Sources */,
@@ -494,6 +516,8 @@
 				4900186614E364080052DE58 /* sync.c in Sources */,
 				4900186714E364080052DE58 /* tag.c in Sources */,
 				4908999914E9FCA2007A4689 /* MPDWrapper.m in Sources */,
+				49F0609914FAD524007C8A51 /* M3NavigationView.m in Sources */,
+				49F060BA14FB1689007C8A51 /* connectedController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,8 +579,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -583,8 +607,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -603,6 +627,10 @@
 		495E129E14DCB2D100F74EED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Downloads\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "capstonempdclient/capstonempdclient-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$[SOURCE_ROOT]/mpd/**";
@@ -617,6 +645,10 @@
 		495E129F14DCB2D100F74EED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Downloads\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "capstonempdclient/capstonempdclient-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$[SOURCE_ROOT]/mpd/**";

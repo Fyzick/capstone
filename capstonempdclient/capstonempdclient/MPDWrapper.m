@@ -54,5 +54,17 @@
 {
     return nil;
 }
++(NSMutableArray *) getSongListForArtist:(struct mpd_connection *)connection :(NSString *)artist
+{
+    return nil;
+}
++(NSMutableArray *) getSongListForGenre:(struct mpd_connection *)connection :(NSString *)genre
+{
+    return nil;
+}
++(NSMutableArray *) getSongListForAlbum:(struct mpd_connection *)connection :(NSString *)album
+{
+    return nil;
+}
 
 @end

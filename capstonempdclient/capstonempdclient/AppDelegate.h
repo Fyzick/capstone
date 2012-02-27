@@ -7,7 +7,6 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#include <mpd/client.h>
 #include "MPDWrapper.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
@@ -16,6 +15,9 @@
     NSTextField *_serverName;
     NSSecureTextField *_password;
     NSTextField *_portNumber;
+    IBOutlet NSView *connectionView;
+    IBOutlet NSView *connectedView;
+    
     
 }
 - (IBAction)quitProgram:(id)sender;
