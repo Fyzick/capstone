@@ -10,4 +10,18 @@
 
 @implementation connectedController
 
+- (id)initWithFrame:(NSRect)frame {
+    self = [super initWithFrame:frame];
+    return self;
+}
+- (IBAction)nextSong:(id)sender {
+}
+
+- (IBAction)playpause:(id)sender {
+}
+
+- (IBAction)prev:(id)sender {
+}
+
+
 @end

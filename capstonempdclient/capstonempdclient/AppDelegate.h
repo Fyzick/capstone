@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #include "MPDWrapper.h"
-
+#import <AppKit/AppKit.h>
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 {

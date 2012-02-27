@@ -66,6 +66,7 @@
 		49F060B114FB0C07007C8A51 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F060B014FB0C07007C8A51 /* Quartz.framework */; };
 		49F060B714FB0EF8007C8A51 /* connectedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49F060B614FB0EF8007C8A51 /* connectedView.xib */; };
 		49F060BA14FB1689007C8A51 /* connectedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F060B914FB1689007C8A51 /* connectedController.m */; };
+		49FC6CFF14FB42D80073CA17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 495E127414DCB2D100F74EED /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -172,6 +173,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49FC6CFF14FB42D80073CA17 /* Foundation.framework in Frameworks */,
 				49F060B114FB0C07007C8A51 /* Quartz.framework in Frameworks */,
 				49F060AF14FB0BFE007C8A51 /* QuartzCore.framework in Frameworks */,
 				495E127014DCB2D100F74EED /* Cocoa.framework in Frameworks */,

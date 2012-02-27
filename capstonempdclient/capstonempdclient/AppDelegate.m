@@ -25,10 +25,10 @@
 - (IBAction)quitProgram:(id)sender {
     [[NSApplication sharedApplication] terminate:nil];
 }
-- (void) awakeFromNib
-{
-    
-}
+
+
+
+
 - (IBAction)connectToServer:(id)sender {
     struct mpd_connection * connection;
     connection = [MPDWrapper openConnectionWithPassword:_serverName.stringValue:_password.stringValue:_portNumber.stringValue];
@@ -36,7 +36,7 @@
     if(connection)
     {
     
-        
+        [self loadSecondView:connection];
         struct mpd_stats * stats;
         stats = mpd_run_stats(connection);
         NSLog(@"%u", mpd_stats_get_number_of_artists(stats));
